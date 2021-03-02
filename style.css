@@ -6,13 +6,18 @@ body {
   background-color: hsl(185, 75%, 39%);
   background-image: url("./images/bg-pattern-top.svg"),
     url("./images/bg-pattern-bottom.svg");
-  background-position: -50% -50%, 120% 200%;
-  background-size: 70vh, 70vh;
+  background-position: -100px -300px, 750px 300px;
+  background-size: 120vh, 120vh;
   background-repeat: no-repeat, no-repeat;
   font-family: "Kumbh Sans";
   color: hsl(229, 23%, 23%);
 }
-
+@media only screen and (min-width: 375px) {
+  body {
+    background-position: -180px -20px, 200px 380px;
+    background-size: 120vh, 120vh;
+  }
+}
 div {
   background: white url(./images/bg-pattern-card.svg) top repeat-x;
   margin: 150px auto;
